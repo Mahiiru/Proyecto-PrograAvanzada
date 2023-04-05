@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e0d3c8-5ed6-47ef-a7e4-f144315abb1f" name="Changes" comment="Project Created.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e8e0d3c8-5ed6-47ef-a7e4-f144315abb1f" name="Changes" comment="packages created.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/management/FilesManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/BooksStock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,7 +29,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NvqYQBQbJbDIJRWT7WhnJWuwoV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680555054588</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="packages created.">
+      <created>1680698354376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680698354376</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -65,7 +83,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Created." />
+    <MESSAGE value="packages created." />
+    <option name="LAST_COMMIT_MESSAGE" value="packages created." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
