@@ -2,19 +2,24 @@ package org.mahiiru.presentation;
 
 import org.mahiiru.common.UseCasesOptions;
 import org.mahiiru.domain.use_cases.Books;
+import org.mahiiru.domain.use_cases.Clients;
+
 
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Menu {
 
-    private Books booksUseCases;
     private Boolean isActive;
+    private Books booksUseCases;
+    private Clients clientsUseCases;
 
     private int useCaseSelected;
 
     public Menu() {
         this.booksUseCases = new Books();
+        this.clientsUseCases = new Clients();
         this.isActive = true;
     }
 
@@ -52,5 +57,28 @@ public class Menu {
         System.out.println("=== MOSTRANDO LIBROS EN STOCK === \n");
         booksUseCases.getBooksStock();
         System.out.println("=== MOSTRANDO LIBROS EN STOCK === \n");
+    }
+
+    public void getClients() {
+        System.out.println("=== MOSTRANDO CLIENTES === \n");
+        clientsUseCases.getClients();
+        System.out.println("=== MOSTRANDO CLIENTES === \n");
+    }
+
+    public void postClient(){
+        System.out.println("Registrar a un nuevo cliente, se necesita nombre y email.");
+        Scanner scanner = new Scanner(System.in);
+        try{
+            System.out.println("Ingresa el nombre : \n");
+            String nombre = scanner.nextLine();
+            System.out.println("Ingresa el email : \n");
+            String email = scanner.nextLine();
+            clientsUseCases.postClient(
+                    nombre.replace(",",""),
+                    email.replace(",","")
+            );
+        }catch (NoSuchElementException e){
+            System.out.println("Debes ingresar un nombre y un email valido.");
+        }
     }
 }

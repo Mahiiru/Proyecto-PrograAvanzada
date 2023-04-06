@@ -2,19 +2,21 @@ package org.mahiiru.data.management;
 
 import org.mahiiru.common.Resources;
 import org.mahiiru.domain.models.Book;
+import org.mahiiru.domain.models.Client;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class FilesManager {
 
     private final String pathBooks;
+    private final String pathClients;
 
     public FilesManager() {
         pathBooks = Resources.PATH_FILE_BOOKS;
+        pathClients = Resources.PATH_FILE_CLIENTS;
     }
 
     public List<Book> getBooks() {
@@ -40,4 +42,46 @@ public class FilesManager {
         }
         return books;
     }
+
+    public List<Client> getClients() {
+        List<Client> clients = new ArrayList<>();
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(pathClients));
+            String line;
+            while ((line = reader.readLine()) != null){
+                String[] clientLine = line.split(",");
+                Client newClient = new Client(
+                        clientLine[0],
+                        clientLine[1]
+                );
+                clients.add(newClient);
+            }
+            reader.close();
+        }catch (IOException e){
+            System.err.println("Error al cargar los clientes : " + e.getMessage());
+        }
+        return clients;
+    }
+
+    public void postClients(HashMap<String, Client> clients){
+        try{
+            BufferedWriter writer = new BufferedWriter(new FileWriter(pathClients));
+            clients.forEach(
+                    (email,client) ->
+                    {
+                        try {
+                            writer.write(client.getName() + "," + client.getEmail() + "\n");
+                        } catch (IOException e) {
+                            System.err.println("Error al guardar el cliente " + client + " : " + e.getMessage());
+                        }
+                    }
+            );
+            writer.flush(); // asegurarse de que se escriban los datos en el archivo
+            writer.close(); // cerrar el BufferedWriter
+            System.out.println("Archivo Clients.txt actualizado.");
+        }catch (IOException e){
+            System.err.println("Error al guardar los clientes : " + e.getMessage());
+        }
+    }
+
 }
