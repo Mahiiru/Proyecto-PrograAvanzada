@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e0d3c8-5ed6-47ef-a7e4-f144315abb1f" name="Changes" comment="Feature get books implemented.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/files/clients/clients.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Clients.java" afterDir="false" />
+    <list default="true" id="e8e0d3c8-5ed6-47ef-a7e4-f144315abb1f" name="Changes" comment="Feature get clients and postClient implemented.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Sale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/SaleDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Sales.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/UseCasesOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/UseCasesOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/files/clients/clients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/files/clients/clients.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/management/FilesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/management/FilesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Clients.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/presentation/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/presentation/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,15 +44,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/cpz29/Desktop/Proyectos/Proyecto Programacion Avanzada/PrograAvanzada",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cpz29/Desktop/Proyectos/Proyecto Programacion Avanzada/PrograAvanzada&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mahiiru.Main" />
@@ -108,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680731739855</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Feature get clients and postClient implemented.">
+      <created>1680812520896</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680812520897</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,7 +137,8 @@
     <MESSAGE value="packages created." />
     <MESSAGE value="Book classes created." />
     <MESSAGE value="Feature get books implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature get books implemented." />
+    <MESSAGE value="Feature get clients and postClient implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature get clients and postClient implemented." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

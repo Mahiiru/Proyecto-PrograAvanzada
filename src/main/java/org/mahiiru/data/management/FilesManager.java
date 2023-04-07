@@ -3,6 +3,7 @@ package org.mahiiru.data.management;
 import org.mahiiru.common.Resources;
 import org.mahiiru.domain.models.Book;
 import org.mahiiru.domain.models.Client;
+import org.mahiiru.domain.models.Sale;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -13,10 +14,12 @@ public class FilesManager {
 
     private final String pathBooks;
     private final String pathClients;
+    private final String pathSales;
 
     public FilesManager() {
         pathBooks = Resources.PATH_FILE_BOOKS;
         pathClients = Resources.PATH_FILE_CLIENTS;
+        pathSales = Resources.PATH_PACKAGE_SALES;
     }
 
     public List<Book> getBooks() {
@@ -79,6 +82,39 @@ public class FilesManager {
             writer.flush(); // asegurarse de que se escriban los datos en el archivo
             writer.close(); // cerrar el BufferedWriter
             System.out.println("Archivo Clients.txt actualizado.");
+        }catch (IOException e){
+            System.err.println("Error al guardar los clientes : " + e.getMessage());
+        }
+    }
+
+    public String[] getSales() {
+        File f = new File(this.pathSales);
+        String[] files = f.list();
+        return files;
+    }
+
+    public void getSale(String saleFile){
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(pathSales + saleFile));
+            String line;
+            System.out.println("=== MOSTRANDO ARCHIVO SALE ===");
+            while ((line = reader.readLine()) != null){
+                System.out.println(line);
+            }
+            reader.close();
+            System.out.println("=== MOSTRANDO ARCHIVO SALE ===\n");
+        }catch (IOException e){
+            System.err.println("Error al cargar el archivo sale : " + e.getMessage());
+        }
+    }
+
+    public void postSale(Sale sale){
+        try{
+            BufferedWriter writer = new BufferedWriter(new FileWriter(pathSales + sale.getId()));
+            writer.write(sale.toString());
+            writer.flush(); // asegurarse de que se escriban los datos en el archivo
+            writer.close(); // cerrar el BufferedWriter
+            System.out.println("Archivo sale creado.");
         }catch (IOException e){
             System.err.println("Error al guardar los clientes : " + e.getMessage());
         }

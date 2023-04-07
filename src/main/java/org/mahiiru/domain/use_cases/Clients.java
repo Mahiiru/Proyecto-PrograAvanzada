@@ -34,4 +34,8 @@ public class Clients {
         this.clients.put(client.getEmail(),client);
         manager.postClients(this.clients);
     }
+
+    public Client getClientByEmail(String email){
+        return this.clients.get(email);
+    }
 }

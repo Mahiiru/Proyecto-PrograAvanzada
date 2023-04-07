@@ -3,6 +3,7 @@ package org.mahiiru.presentation;
 import org.mahiiru.common.UseCasesOptions;
 import org.mahiiru.domain.use_cases.Books;
 import org.mahiiru.domain.use_cases.Clients;
+import org.mahiiru.domain.use_cases.Sales;
 
 
 import java.util.InputMismatchException;
@@ -14,12 +15,14 @@ public class Menu {
     private Boolean isActive;
     private Books booksUseCases;
     private Clients clientsUseCases;
+    private Sales salesUseCases;
 
     private int useCaseSelected;
 
     public Menu() {
         this.booksUseCases = new Books();
         this.clientsUseCases = new Clients();
+        this.salesUseCases = new Sales();
         this.isActive = true;
     }
 

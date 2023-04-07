@@ -14,10 +14,10 @@ public class Main {
             menu.getUseCases();
             menu.setUseCaseSelected();
             switch (menu.getUseCaseSelected()) {
+                case 0 -> menu.setActive(!menu.getActive());
                 case 1 -> menu.getBooks();
                 case 2 -> menu.getClients();
                 case 3 -> menu.postClient();
-                case 0 -> menu.setActive(!menu.getActive());
                 default -> System.out.println("Opcion invalida.");
             }
         }
