@@ -15,11 +15,13 @@ public class FilesManager {
     private final String pathBooks;
     private final String pathClients;
     private final String pathSales;
+    private final String txt;
 
     public FilesManager() {
         pathBooks = Resources.PATH_FILE_BOOKS;
         pathClients = Resources.PATH_FILE_CLIENTS;
         pathSales = Resources.PATH_PACKAGE_SALES;
+        txt = Resources.TXT;
     }
 
     public List<Book> getBooks() {
@@ -28,7 +30,7 @@ public class FilesManager {
             BufferedReader reader = new BufferedReader(new FileReader(pathBooks));
             String line;
             while ((line = reader.readLine()) != null){
-                String[] bookLine = line.replace("\"", "").split(",");
+                String[] bookLine = line.split(",");
                 Book newBook = new Book(
                         bookLine[0],
                         bookLine[1],
@@ -44,6 +46,34 @@ public class FilesManager {
             System.err.println("Error al cargar los libros : " + e.getMessage());
         }
         return books;
+    }
+
+    public void putBooks(HashMap<Integer,Book> booksStock) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(pathBooks));
+            booksStock.forEach(
+                    (id,book) ->
+                    {
+                        try {
+                            writer.write(
+                                    book.getBookID() + "," +
+                                            book.getTitle() + "," +
+                                            book.getAuthors() + "," +
+                                            book.getIsbn() + "," +
+                                            book.getStock() + "," +
+                                            book.getPrice() + "\n"
+                            );
+                        } catch (IOException e) {
+                            System.err.println("Error al guardar el libro " + book + " : " + e.getMessage());
+                        }
+                    }
+            );
+            writer.flush(); // asegurarse de que se escriban los datos en el archivo
+            writer.close(); // cerrar el BufferedWriter
+            System.out.println("Archivo books.txt actualizado.");
+        }catch (IOException e){
+            System.err.println("Error al actualizar el stock de libros : " + e.getMessage());
+        }
     }
 
     public List<Client> getClients() {
@@ -110,13 +140,15 @@ public class FilesManager {
 
     public void postSale(Sale sale){
         try{
-            BufferedWriter writer = new BufferedWriter(new FileWriter(pathSales + sale.getId()));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(pathSales + sale.getId() + txt));
+            System.out.println("Writer creado");
             writer.write(sale.toString());
+            System.out.println("Write hecho");
             writer.flush(); // asegurarse de que se escriban los datos en el archivo
             writer.close(); // cerrar el BufferedWriter
             System.out.println("Archivo sale creado.");
         }catch (IOException e){
-            System.err.println("Error al guardar los clientes : " + e.getMessage());
+            System.err.println("Error al guardar la venta : " + e.getMessage());
         }
     }
 

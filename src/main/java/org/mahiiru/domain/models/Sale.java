@@ -18,8 +18,8 @@ public class Sale {
         this.details = details;
         this.total = getTotalFromDetails();
         this.dateTime = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd/HH:mm:ss");
-        this.id = this.dateTime.format(formatter) + "/" + this.client.getEmail();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
+        this.id = this.dateTime.format(formatter);
     }
 
     private int getTotalFromDetails() {

@@ -93,12 +93,12 @@ public class Menu {
 
     public void getSaleByID(){
         try{
-            System.out.println("Ingresa la id de la venta : \n");
+            System.out.println("Ingresa el nombre del archivo de la venta : \n");
             Scanner scanner = new Scanner(System.in);
             String id = scanner.nextLine();
             salesUseCases.getSaleByID(id);
         }catch (NoSuchElementException e){
-            System.out.println("Debes ingresar una id valida.");
+            System.out.println("Debes ingresar un nombre valido.");
         }
     }
 
@@ -149,7 +149,7 @@ public class Menu {
             try {
                 System.out.println("Ingresa la cantidad : \n");
                 input = scanner.nextInt();
-                if((totalBooks + input) < maxBooksNumber && input >= 1){
+                if((totalBooks + input) <= maxBooksNumber && input >= 1){
                     isNotValidNumber = false;
                 }else{
                     System.out.println("Debes ingresar una cantidad valida de libros.");

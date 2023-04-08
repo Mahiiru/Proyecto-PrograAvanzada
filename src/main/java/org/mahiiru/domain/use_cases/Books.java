@@ -31,8 +31,11 @@ public class Books {
     public Book getBookByID(int id){return this.booksStock.get(id);}
 
     public SaleDetails getSaleByIDAndNumBooks(int id, int numBooks){
-        //Aqui deberia agregarse logica para restar del stock el num de libros
-        return new SaleDetails(getBookByID(id),numBooks);
+        Book book = getBookByID(id);
+        book.setStock(book.getStock() - numBooks);
+        this.booksStock.put(id,book);
+        this.manager.putBooks(this.booksStock);
+        return new SaleDetails(book,numBooks);
     }
 
     @Override

@@ -1,0 +1,30 @@
+Sale{
+client= 
+Client{name='Cristobal Pavez', email='c.pavez07@ufromail.cl'}
+details= 
+[SaleDetails{
+book= 
+Book{
+bookID= 
+'1'
+title= 
+'Harry Potter and the Half-Blood Prince (Harry Potter  #6)'
+authors= 
+'J.K. Rowling/Mary GrandPré'
+isbn= 
+'0439785960'
+price= 
+53757
+}
+quantity= 
+2
+totalAmount= 
+107514
+}]
+total= 
+107514
+dateTime= 
+2023-04-08T15:55:14.479657800
+id= 
+'2023-04-08_15-55-14'
+}

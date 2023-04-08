@@ -18,6 +18,9 @@ public class Main {
                 case 1 -> menu.getBooks();
                 case 2 -> menu.getClients();
                 case 3 -> menu.postClient();
+                case 4 -> menu.getSales();
+                case 5 -> menu.getSaleByID();
+                case 6 -> menu.postSale();
                 default -> System.out.println("Opcion invalida.");
             }
         }
