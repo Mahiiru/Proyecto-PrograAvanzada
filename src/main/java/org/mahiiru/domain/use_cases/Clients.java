@@ -23,7 +23,7 @@ public class Clients {
         return clients;
     }
 
-    public void getClients(){
+    public void getClientsPrint(){
         this.clients.forEach(
                 (email,client) -> System.out.println("Cliente :  \n Email : " + email + " \n Nombre : " + client.getName())
         );
@@ -37,5 +37,9 @@ public class Clients {
 
     public Client getClientByEmail(String email){
         return this.clients.get(email);
+    }
+
+    public HashMap<String, Client> getClients() {
+        return clients;
     }
 }

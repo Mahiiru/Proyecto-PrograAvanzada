@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e0d3c8-5ed6-47ef-a7e4-f144315abb1f" name="Changes" comment="Feature get clients and postClient implemented.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/SaleDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Sales.java" afterDir="false" />
+    <list default="true" id="e8e0d3c8-5ed6-47ef-a7e4-f144315abb1f" name="Changes" comment="Feature Sale and SaleDetails created.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/files/clients/clients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/files/clients/clients.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/management/FilesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/management/FilesManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Clients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Sales.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/presentation/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/presentation/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680812520897</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Feature Sale and SaleDetails created.">
+      <created>1680896299426</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680896299426</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,7 +138,8 @@
     <MESSAGE value="Book classes created." />
     <MESSAGE value="Feature get books implemented." />
     <MESSAGE value="Feature get clients and postClient implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature get clients and postClient implemented." />
+    <MESSAGE value="Feature Sale and SaleDetails created." />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature Sale and SaleDetails created." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

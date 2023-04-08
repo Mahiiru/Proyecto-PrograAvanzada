@@ -25,12 +25,11 @@ public class Sales {
     }
 
     public void getSales(){
-        IntStream.range(0, this.sales.size())
-                .forEach(i -> System.out.println(i + ": " + this.sales.get(i)));
+        this.sales.forEach(System.out::println);
     }
 
-    public void getSaleByIndex(int index){
-        manager.getSale(this.sales.get(index));
+    public void getSaleByID(String id){
+        manager.getSale(id);
     }
 
     public void postSale(Client client, List<SaleDetails> details){
