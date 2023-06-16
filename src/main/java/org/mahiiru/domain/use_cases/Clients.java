@@ -16,10 +16,12 @@ public class Clients {
     }
 
     private HashMap<String, Client> getClientsData() {
-        HashMap<String,Client> clients = new HashMap<>();
-        manager.getClients().forEach(
-                (Client c) -> clients.put(c.getEmail(),c)
-        );
+        HashMap<String, Client> clients = new HashMap<>();
+        manager.getClients().forEach(line -> {
+            String[] clientLine = line.split(",");
+            Client newClient = new Client(clientLine[0], clientLine[1]);
+            clients.put(newClient.getEmail(), newClient);
+        });
         return clients;
     }
 
@@ -41,5 +43,12 @@ public class Clients {
 
     public HashMap<String, Client> getClients() {
         return clients;
+    }
+
+
+    public Client modifyClientByEmail(String id, String name, String email) {
+        Client client = new Client(name,email);
+        this.clients.put(id,client);
+        return this.clients.get(id);
     }
 }

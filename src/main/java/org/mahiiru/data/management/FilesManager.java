@@ -76,24 +76,19 @@ public class FilesManager {
         }
     }
 
-    public List<Client> getClients() {
-        List<Client> clients = new ArrayList<>();
+    public List<String> getClients() {
+        List<String> clientLines = new ArrayList<>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(pathClients));
             String line;
-            while ((line = reader.readLine()) != null){
-                String[] clientLine = line.split(",");
-                Client newClient = new Client(
-                        clientLine[0],
-                        clientLine[1]
-                );
-                clients.add(newClient);
+            while ((line = reader.readLine()) != null) {
+                clientLines.add(line);
             }
             reader.close();
-        }catch (IOException e){
-            System.err.println("Error al cargar los clientes : " + e.getMessage());
+        } catch (IOException e) {
+            System.err.println("Error al cargar los clientes: " + e.getMessage());
         }
-        return clients;
+        return clientLines;
     }
 
     public void postClients(HashMap<String, Client> clients){

@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e0d3c8-5ed6-47ef-a7e4-f144315abb1f" name="Changes" comment="Feature getSales, getSaleByID,postSale implemented.">
+    <list default="true" id="e8e0d3c8-5ed6-47ef-a7e4-f144315abb1f" name="Changes" comment="Feature getSales, getSaleByID,postSale finished.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/mahiiru/data/management/FilesManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/mahiiru/domain/use_cases/ClientsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/UseCasesOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/common/UseCasesOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/files/books/books.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/files/books/books.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/files/clients/clients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/files/clients/clients.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/management/FilesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/data/management/FilesManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Books.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/presentation/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/presentation/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahiiru/domain/use_cases/Clients.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +25,25 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="yxdo8a2v" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2NvqYQBQbJbDIJRWT7WhnJWuwoV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,29 +56,115 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;CLASS_PANEL_SPLIT_PROPORTION&quot;: &quot;0.38707528&quot;,
+    &quot;PROJECT_2PANELS_PROPORTION&quot;: &quot;0.3191206&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cpz29/Desktop/Proyectos/Proyecto Programacion Avanzada/PrograAvanzada&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cpz29/Desktop/Proyectos/rust/taller4&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.mahiiru.Main" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.mahiiru.domain.use_cases" />
+      <recent name="org.mahiiru.data.management" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ClientsTest">
+    <configuration name="ClientsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PrograAvanzada" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.mahiiru.*" />
+          <option name="PATTERN" value="org.mahiiru.domain.use_cases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.mahiiru.domain.use_cases" />
+      <option name="MAIN_CLASS_NAME" value="org.mahiiru.domain.use_cases.ClientsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientsTest.modifyClientByEmailTestNumbersOfClientsAreEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PrograAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mahiiru.domain.use_cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mahiiru.domain.use_cases" />
+      <option name="MAIN_CLASS_NAME" value="org.mahiiru.domain.use_cases.ClientsTest" />
+      <option name="METHOD_NAME" value="modifyClientByEmailTestNumbersOfClientsAreEquals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientsTest.modifyClientByEmailTestThatOldClientIsReplaced" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PrograAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mahiiru.domain.use_cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mahiiru.domain.use_cases" />
+      <option name="MAIN_CLASS_NAME" value="org.mahiiru.domain.use_cases.ClientsTest" />
+      <option name="METHOD_NAME" value="modifyClientByEmailTestThatOldClientIsReplaced" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientsTest.modifyClientByEmailTestThatOneClientIsReplaced" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PrograAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mahiiru.domain.use_cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mahiiru.domain.use_cases" />
+      <option name="MAIN_CLASS_NAME" value="org.mahiiru.domain.use_cases.ClientsTest" />
+      <option name="METHOD_NAME" value="modifyClientByEmailTestThatOneClientIsReplaced" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilesManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PrograAvanzada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mahiiru.data.management.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mahiiru.data.management" />
+      <option name="MAIN_CLASS_NAME" value="org.mahiiru.data.management.FilesManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ClientsTest" />
+        <item itemvalue="JUnit.ClientsTest.modifyClientByEmailTestThatOneClientIsReplaced" />
+        <item itemvalue="JUnit.ClientsTest.modifyClientByEmailTestThatOldClientIsReplaced" />
+        <item itemvalue="JUnit.ClientsTest.modifyClientByEmailTestNumbersOfClientsAreEquals" />
+        <item itemvalue="JUnit.FilesManagerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680915672438</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Feature getSales, getSaleByID,postSale finished.">
+      <created>1680983999097</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680983999097</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,7 +256,8 @@
     <MESSAGE value="Feature get clients and postClient implemented." />
     <MESSAGE value="Feature Sale and SaleDetails created." />
     <MESSAGE value="Feature getSales, getSaleByID,postSale implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature getSales, getSaleByID,postSale implemented." />
+    <MESSAGE value="Feature getSales, getSaleByID,postSale finished." />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature getSales, getSaleByID,postSale finished." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

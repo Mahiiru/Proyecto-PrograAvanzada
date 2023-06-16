@@ -1,6 +1,6 @@
-1,Harry Potter and the Half-Blood Prince (Harry Potter  #6),J.K. Rowling/Mary GrandPré,0439785960,98,53757
-2,Harry Potter and the Order of the Phoenix (Harry Potter  #5),J.K. Rowling/Mary GrandPré,0439358078,100,69425
-4,Harry Potter and the Chamber of Secrets (Harry Potter  #2),J.K. Rowling,0439554896,100,94339
+1,Harry Potter and the Half-Blood Prince (Harry Potter  #6),J.K. Rowling/Mary GrandPré,0439785960,97,53757
+2,Harry Potter and the Order of the Phoenix (Harry Potter  #5),J.K. Rowling/Mary GrandPré,0439358078,99,69425
+4,Harry Potter and the Chamber of Secrets (Harry Potter  #2),J.K. Rowling,0439554896,99,94339
 5,Harry Potter and the Prisoner of Azkaban (Harry Potter  #3),J.K. Rowling/Mary GrandPré,043965548X,100,16421
 8,Harry Potter Boxed Set  Books 1-5 (Harry Potter  #1-5),J.K. Rowling/Mary GrandPré,0439682584,100,58423
 9,Unauthorized Harry Potter Book Seven News: Half-Blood Prince Analysis and Speculation,W. Frederick Zimmerman,0976540606,100,33667
